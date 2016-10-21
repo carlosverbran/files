@@ -1,0 +1,32 @@
+set tecnologias := hidro coalp ccomb diesel ;
+set fallas := falla ;
+set hidrologias := humeda media seca ;
+
+param dmax := 3000 ;
+param T := 8760 ;
+param alpha := 0.6662 ;
+param constInt := 39543574.25 ;
+param k := -7.58657E-05 ;
+param enerTot := 19184400 ;
+
+param cvar :=
+hidro 0.0
+ccomb 10.9
+coalp 14.6
+diesel 46
+falla 250
+;
+
+param cf :=
+hidro 148.2
+ccomb 115.1
+coalp 98.7
+diesel 56.6
+falla 0.0
+;
+
+param pond :=
+humeda 1
+media 0.8
+seca 0.6
+;
